@@ -1,6 +1,7 @@
 package com.canchala.julio.practica7;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -35,6 +36,7 @@ public class Nuevalarma extends Fragment {
     CheckBox todosdias;
     Button guardar;
     EditText actividad;
+    Button lugar;
 
     private Firebase mRef;
 
@@ -61,6 +63,7 @@ public class Nuevalarma extends Fragment {
         todosdias=(CheckBox) rootView.findViewById(R.id.checkBox);
         guardar=(Button) rootView.findViewById(R.id.guardarnue);
         actividad=(EditText) rootView.findViewById(R.id.txt);
+        lugar=(Button) rootView.findViewById(R.id.lugar);
 
         Firebase.setAndroidContext(getContext());
         mRef=new Firebase("https://fatto.firebaseio.com/");
@@ -87,6 +90,14 @@ public class Nuevalarma extends Fragment {
                     domingo.setChecked(false);
 
                 }
+            }
+        });
+
+        lugar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), MapsActivity.class);
+                startActivity(intent);
             }
         });
 
