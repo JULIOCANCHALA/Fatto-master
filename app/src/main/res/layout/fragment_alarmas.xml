@@ -1,0 +1,38 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.canchala.julio.practica7.Alarmas">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/imagepereza"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/pere"
+            android:padding="70sp"
+            android:visibility="gone"
+            />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+        </ListView>
+
+
+    </LinearLayout>
+
+</FrameLayout>

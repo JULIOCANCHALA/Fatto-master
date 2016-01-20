@@ -1,0 +1,162 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.canchala.julio.practica7.Nuevalarma">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:id="@+id/ac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Que vas hacer?"
+            android:textSize="22dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/color7"
+            />
+
+        <EditText
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ac"
+            />
+
+        <TextView
+            android:id="@+id/hor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿A que hora?"
+            android:textSize="22dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/color7"
+            android:layout_below="@id/txt"
+            />
+
+
+        <TimePicker
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:id="@+id/timePicker"
+            android:layout_below="@id/hor"
+            android:layout_centerHorizontal="true"
+            android:timePickerMode="spinner"
+            />
+
+        <TextView
+            android:id="@+id/dat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Que día?"
+            android:textSize="22dp"
+            android:layout_below="@id/timePicker"
+            android:gravity="center"
+            android:textColor="@color/color7"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/dat"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:id="@+id/linearLayout">
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButtonlunes"
+                android:textOff="L"
+                android:textOn="L"
+                android:layout_weight="1"
+                />
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButtonmartes"
+                android:textOff="M"
+                android:textOn="M"
+                android:layout_weight="1"
+                />
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButtonmiercoles"
+                android:textOff="W"
+                android:textOn="W"
+                android:layout_weight="1"
+                />
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButtonjueves"
+                android:textOff="J"
+                android:textOn="J"
+                android:layout_weight="1"
+                />
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButtonviernes"
+                android:textOff="V"
+                android:textOn="V"
+                android:layout_weight="1"
+                />
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButtonsabado"
+                android:textOff="S"
+                android:textOn="S"
+                android:layout_weight="1"
+                />
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButtondomingo"
+                android:textOff="D"
+                android:textOn="D"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Todos los días"
+            android:id="@+id/checkBox"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignRight="@+id/linearLayout"
+            android:layout_alignEnd="@+id/linearLayout" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkBox"
+            android:layout_centerHorizontal="true"
+            android:text="Guardar"
+            android:background="@color/color7"
+            android:textColor="@color/color2"
+            android:id="@+id/guardarnue"
+            android:layout_marginTop="6dp"
+            />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
